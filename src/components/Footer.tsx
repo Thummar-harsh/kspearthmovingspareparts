@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Globe } from 'lucide-react';
+import { Phone, Mail, MapPin, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,30 +11,42 @@ export default function Footer() {
                 KSP
               </div>
               <div>
-                <div className="text-xl font-bold text-white">Shree Ram Hydraulic</div>
+                <div className="text-xl font-bold text-white">
+                  Shree Ram Hydraulic
+                </div>
                 <div className="text-xs">KSP Earthmoving Spare Parts</div>
               </div>
             </div>
             <p className="text-sm leading-relaxed">
-              India's Leading Manufacturer & Global Supplier of Earthmoving Spare Parts. ISO 9001:2015 Certified Company.
+              India's Leading Manufacturer & Global Supplier of Earthmoving
+              Spare Parts. ISO 9001:2015 Certified Company.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-white font-semibold mb-4">
+              Contact Information
+            </h3>
             <div className="space-y-3">
-              <a href="tel:+919510477724" className="flex items-start gap-3 hover:text-brand-yellow transition-colors">
+              <a
+                href="tel:+919510477724"
+                className="flex items-start gap-3 hover:text-brand-yellow transition-colors"
+              >
                 <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">+91 95104 77724</span>
               </a>
-              <a href="mailto:shreeramhydraulic100@gmail.com" className="flex items-start gap-3 hover:text-brand-yellow transition-colors">
+              <a
+                href="mailto:shreeramhydraulic100@gmail.com"
+                className="flex items-start gap-3 hover:text-brand-yellow transition-colors"
+              >
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">shreeramhydraulic100@gmail.com</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
-                  Dhwani Ind. Park -2, SIDC Road, Veraval Shapar, Dist. Rajkot-360024, Gujarat (India)
+                  Dhwani Ind. Park -2, SIDC Road, Veraval Shapar, Dist.
+                  Rajkot-360024, Gujarat (India)
                 </span>
               </div>
             </div>
@@ -68,7 +80,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Shree Ram Hydraulic. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Shree Ram Hydraulic. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

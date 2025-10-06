@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Globe, Send, CheckCircle } from 'lucide-react';
+import { useState } from "react";
+import { Phone, Mail, MapPin, Globe, Send, CheckCircle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    country: '',
-    inquiryType: 'general',
-    message: '',
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    country: "",
+    inquiryType: "general",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -19,17 +19,21 @@ export default function Contact() {
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
     setFormData({
-      name: '',
-      company: '',
-      email: '',
-      phone: '',
-      country: '',
-      inquiryType: 'general',
-      message: '',
+      name: "",
+      company: "",
+      email: "",
+      phone: "",
+      country: "",
+      inquiryType: "general",
+      message: "",
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -37,10 +41,10 @@ export default function Contact() {
   };
 
   const globalPresence = [
-    { region: 'India', coverage: 'Nationwide Network', dealers: '150+' },
-    { region: 'Middle East', coverage: 'Expanding Presence', dealers: '20+' },
-    { region: 'Asia Pacific', coverage: 'Growing Market', dealers: '15+' },
-    { region: 'Africa', coverage: 'Export Ready', dealers: '10+' },
+    { region: "India", coverage: "Nationwide Network", dealers: "150+" },
+    { region: "Middle East", coverage: "Expanding Presence", dealers: "20+" },
+    { region: "Asia Pacific", coverage: "Growing Market", dealers: "15+" },
+    { region: "Africa", coverage: "Export Ready", dealers: "10+" },
   ];
 
   return (
@@ -57,7 +61,8 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-xl text-gray-300">
-              Connect with us to discuss your requirements and join our global dealer network
+              Connect with us to discuss your requirements and join our global
+              dealer network
             </p>
           </div>
         </div>
@@ -71,7 +76,8 @@ export default function Contact() {
                 Contact Information
               </h2>
               <p className="text-gray-600 mb-8">
-                Reach out to us for inquiries, quotes, or partnership opportunities. Our team is ready to assist you.
+                Reach out to us for inquiries, quotes, or partnership
+                opportunities. Our team is ready to assist you.
               </p>
 
               <div className="space-y-6">
@@ -80,8 +86,13 @@ export default function Contact() {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                    <a href="tel:+919510477724" className="text-brand-red hover:text-red-700 text-lg">
+                    <div className="font-semibold text-gray-900 mb-1">
+                      Phone
+                    </div>
+                    <a
+                      href="tel:+919510477724"
+                      className="text-brand-red hover:text-red-700 text-lg"
+                    >
                       +91 95104 77724
                     </a>
                   </div>
@@ -92,8 +103,13 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 mb-1">Email</div>
-                    <a href="mailto:shreeramhydraulic100@gmail.com" className="text-brand-red hover:text-red-700">
+                    <div className="font-semibold text-gray-900 mb-1">
+                      Email
+                    </div>
+                    <a
+                      href="mailto:shreeramhydraulic100@gmail.com"
+                      className="text-brand-red hover:text-red-700"
+                    >
                       shreeramhydraulic100@gmail.com
                     </a>
                   </div>
@@ -104,10 +120,14 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 mb-1">Address</div>
+                    <div className="font-semibold text-gray-900 mb-1">
+                      Address
+                    </div>
                     <p className="text-gray-600">
-                      Dhwani Ind. Park -2, SIDC Road,<br />
-                      Veraval Shapar, Dist. Rajkot-360024,<br />
+                      Dhwani Ind. Park -2, SIDC Road,
+                      <br />
+                      Veraval Shapar, Dist. Rajkot-360024,
+                      <br />
                       Gujarat, India
                     </p>
                   </div>
@@ -142,13 +162,18 @@ export default function Contact() {
                 {submitted && (
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <p className="text-green-800">Thank you! Your message has been sent successfully.</p>
+                    <p className="text-green-800">
+                      Thank you! Your message has been sent successfully.
+                    </p>
                   </div>
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
                       Full Name *
                     </label>
                     <input
@@ -164,7 +189,10 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
                       Company Name *
                     </label>
                     <input
@@ -181,7 +209,10 @@ export default function Contact() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-semibold text-gray-700 mb-2"
+                      >
                         Email *
                       </label>
                       <input
@@ -197,7 +228,10 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-semibold text-gray-700 mb-2"
+                      >
                         Phone
                       </label>
                       <input
@@ -214,7 +248,10 @@ export default function Contact() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="country" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label
+                        htmlFor="country"
+                        className="block text-sm font-semibold text-gray-700 mb-2"
+                      >
                         Country *
                       </label>
                       <input
@@ -230,7 +267,10 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="inquiryType" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label
+                        htmlFor="inquiryType"
+                        className="block text-sm font-semibold text-gray-700 mb-2"
+                      >
                         Inquiry Type *
                       </label>
                       <select
@@ -251,7 +291,10 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
                       Message *
                     </label>
                     <textarea
@@ -293,11 +336,18 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {globalPresence.map((region, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 text-center">
+              <div
+                key={index}
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 text-center"
+              >
                 <Globe className="w-12 h-12 mx-auto mb-4 text-brand-red" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{region.region}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {region.region}
+                </h3>
                 <p className="text-gray-600 mb-3">{region.coverage}</p>
-                <div className="text-2xl font-bold text-brand-red">{region.dealers}</div>
+                <div className="text-2xl font-bold text-brand-red">
+                  {region.dealers}
+                </div>
                 <div className="text-sm text-gray-500">Dealers</div>
               </div>
             ))}
@@ -312,19 +362,26 @@ export default function Contact() {
               Ready to Partner With Us?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Join our network of 150+ dealers worldwide and experience the difference of working with a trusted manufacturer
+              Join our network of 150+ dealers worldwide and experience the
+              difference of working with a trusted manufacturer
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm px-6 py-4 rounded-lg">
-                <div className="font-bold text-brand-yellow text-2xl mb-1">ISO 9001:2015</div>
+                <div className="font-bold text-brand-yellow text-2xl mb-1">
+                  ISO 9001:2015
+                </div>
                 <div className="text-sm">Certified Quality</div>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm px-6 py-4 rounded-lg">
-                <div className="font-bold text-brand-yellow text-2xl mb-1">On-Time</div>
+                <div className="font-bold text-brand-yellow text-2xl mb-1">
+                  On-Time
+                </div>
                 <div className="text-sm">Delivery Guaranteed</div>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm px-6 py-4 rounded-lg">
-                <div className="font-bold text-brand-yellow text-2xl mb-1">Zero Defect</div>
+                <div className="font-bold text-brand-yellow text-2xl mb-1">
+                  Zero Defect
+                </div>
                 <div className="text-sm">Quality Policy</div>
               </div>
             </div>

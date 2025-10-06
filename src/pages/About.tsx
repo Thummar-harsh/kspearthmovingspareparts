@@ -1,41 +1,52 @@
-import { CheckCircle, Target, Globe, Award, Users, TrendingUp } from 'lucide-react';
+import {
+  CheckCircle,
+  Target,
+  Globe,
+  Award,
+  Users,
+  TrendingUp,
+} from "lucide-react";
 
 export default function About() {
   const values = [
     {
       icon: Target,
-      title: 'Our Mission',
-      description: 'Expand our global dealer network while delivering on-time, zero-defect products that exceed industry standards.',
+      title: "Our Mission",
+      description:
+        "Expand our global dealer network while delivering on-time, zero-defect products that exceed industry standards.",
     },
     {
       icon: Award,
-      title: 'Quality First',
-      description: 'ISO 9001:2015 certified with rigorous testing and quality control at every production stage.',
+      title: "Quality First",
+      description:
+        "ISO 9001:2015 certified with rigorous testing and quality control at every production stage.",
     },
     {
       icon: Globe,
-      title: 'Global Presence',
-      description: 'Serving 150+ dealers across India and expanding our footprint in international markets.',
+      title: "Global Presence",
+      description:
+        "Serving 150+ dealers across India and expanding our footprint in international markets.",
     },
     {
       icon: Users,
-      title: 'Customer Focus',
-      description: 'Building long-term partnerships through reliability, transparency, and exceptional service.',
+      title: "Customer Focus",
+      description:
+        "Building long-term partnerships through reliability, transparency, and exceptional service.",
     },
   ];
 
   const achievements = [
-    { number: '12+', label: 'Years of Excellence' },
-    { number: '150+', label: 'Dealer Partnerships' },
-    { number: '7+', label: 'OEM Brands Supported' },
-    { number: '1000+', label: 'Products Manufactured' },
+    { number: "12+", label: "Years of Excellence" },
+    { number: "150+", label: "Dealer Partnerships" },
+    { number: "7+", label: "OEM Brands Supported" },
+    { number: "1000+", label: "Products Manufactured" },
   ];
 
   const certifications = [
-    'ISO 9001:2015 Quality Management',
-    'Advanced Manufacturing Standards',
-    'Export Quality Compliance',
-    'Industry Safety Standards',
+    "ISO 9001:2015 Quality Management",
+    "Advanced Manufacturing Standards",
+    "Export Quality Compliance",
+    "Industry Safety Standards",
   ];
 
   return (
@@ -52,7 +63,8 @@ export default function About() {
               About Shree Ram Hydraulic
             </h1>
             <p className="text-xl text-gray-300">
-              Leading the earthmoving spare parts industry with innovation, quality, and customer commitment
+              Leading the earthmoving spare parts industry with innovation,
+              quality, and customer commitment
             </p>
           </div>
         </div>
@@ -66,7 +78,9 @@ export default function About() {
                 <div className="text-4xl md:text-5xl font-bold text-brand-red mb-2">
                   {achievement.number}
                 </div>
-                <div className="text-gray-600 font-medium">{achievement.label}</div>
+                <div className="text-gray-600 font-medium">
+                  {achievement.label}
+                </div>
               </div>
             ))}
           </div>
@@ -82,16 +96,32 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p className="text-lg">
-                  Established in 2013, <span className="font-semibold text-gray-900">Shree Ram Hydraulic</span> (operating as KSP Earthmoving Spare Parts) has grown into India's premier manufacturer and global supplier of high-quality earthmoving spare parts.
+                  Established in 2013,{" "}
+                  <span className="font-semibold text-gray-900">
+                    Shree Ram Hydraulic
+                  </span>{" "}
+                  (operating as KSP Earthmoving Spare Parts) has grown into
+                  India's premier manufacturer and global supplier of
+                  high-quality earthmoving spare parts.
                 </p>
                 <p>
-                  From our state-of-the-art facility in Rajkot, Gujarat, we serve a network of 150+ dealers across India and expanding international markets. Our commitment to excellence has made us the trusted partner for procurement managers, distributors, and mechanics worldwide.
+                  From our state-of-the-art facility in Rajkot, Gujarat, we
+                  serve a network of 150+ dealers across India and expanding
+                  international markets. Our commitment to excellence has made
+                  us the trusted partner for procurement managers, distributors,
+                  and mechanics worldwide.
                 </p>
                 <p>
-                  We specialize in manufacturing precision components including bushes, pivot pins, bearings, gears, hydraulic systems, and custom fabrication. Our products are compatible with all major OEM brands including JCB, CAT, CASE, HITACHI, Mahindra, L&T Case, and Escort.
+                  We specialize in manufacturing precision components including
+                  bushes, pivot pins, bearings, gears, hydraulic systems, and
+                  custom fabrication. Our products are compatible with all major
+                  OEM brands including JCB, CAT, CASE, HITACHI, Mahindra, L&T
+                  Case, and Escort.
                 </p>
                 <p className="font-semibold text-gray-900">
-                  Our mission is clear: expand our global dealer network while maintaining our zero-defect commitment and on-time delivery standards.
+                  Our mission is clear: expand our global dealer network while
+                  maintaining our zero-defect commitment and on-time delivery
+                  standards.
                 </p>
               </div>
             </div>
@@ -101,43 +131,63 @@ export default function About() {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold mb-1">ISO 9001:2015 Certified</div>
-                    <div className="text-red-100 text-sm">Internationally recognized quality standards</div>
+                    <div className="font-semibold mb-1">
+                      ISO 9001:2015 Certified
+                    </div>
+                    <div className="text-red-100 text-sm">
+                      Internationally recognized quality standards
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold mb-1">Advanced Manufacturing</div>
-                    <div className="text-red-100 text-sm">CNC, VMC, forging, and precision grinding</div>
+                    <div className="font-semibold mb-1">
+                      Advanced Manufacturing
+                    </div>
+                    <div className="text-red-100 text-sm">
+                      CNC, VMC, forging, and precision grinding
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <div className="font-semibold mb-1">Zero Defect Policy</div>
-                    <div className="text-red-100 text-sm">Rigorous quality control and testing</div>
+                    <div className="text-red-100 text-sm">
+                      Rigorous quality control and testing
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <div className="font-semibold mb-1">On-Time Delivery</div>
-                    <div className="text-red-100 text-sm">Reliable logistics and supply chain</div>
+                    <div className="text-red-100 text-sm">
+                      Reliable logistics and supply chain
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold mb-1">Cost-Effective Solutions</div>
-                    <div className="text-red-100 text-sm">Competitive pricing without compromising quality</div>
+                    <div className="font-semibold mb-1">
+                      Cost-Effective Solutions
+                    </div>
+                    <div className="text-red-100 text-sm">
+                      Competitive pricing without compromising quality
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold mb-1">Global Export Ready</div>
-                    <div className="text-red-100 text-sm">Serving international markets with excellence</div>
+                    <div className="font-semibold mb-1">
+                      Global Export Ready
+                    </div>
+                    <div className="text-red-100 text-sm">
+                      Serving international markets with excellence
+                    </div>
                   </div>
                 </div>
               </div>
@@ -167,8 +217,12 @@ export default function About() {
                   <div className="w-14 h-14 bg-gradient-to-br from-brand-red to-brand-orange rounded-xl flex items-center justify-center mb-4">
                     <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {value.description}
+                  </p>
                 </div>
               );
             })}
@@ -184,7 +238,8 @@ export default function About() {
                 Certifications & Standards
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Our commitment to quality is validated by international certifications and adherence to the highest industry standards.
+                Our commitment to quality is validated by international
+                certifications and adherence to the highest industry standards.
               </p>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
@@ -202,12 +257,19 @@ export default function About() {
                 <TrendingUp className="w-16 h-16 text-brand-yellow mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Our Commitment</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  We are dedicated to continuous improvement, innovation, and maintaining the trust of our global dealer network. Every product that leaves our facility meets the strictest quality standards.
+                  We are dedicated to continuous improvement, innovation, and
+                  maintaining the trust of our global dealer network. Every
+                  product that leaves our facility meets the strictest quality
+                  standards.
                 </p>
               </div>
               <div className="border-t border-gray-700 pt-6">
-                <div className="text-3xl font-bold text-brand-yellow mb-2">100%</div>
-                <div className="text-gray-300">Quality Assurance on Every Product</div>
+                <div className="text-3xl font-bold text-brand-yellow mb-2">
+                  100%
+                </div>
+                <div className="text-gray-300">
+                  Quality Assurance on Every Product
+                </div>
               </div>
             </div>
           </div>
